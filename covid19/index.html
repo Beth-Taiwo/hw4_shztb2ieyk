@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 App</title>
+    <link rel="stylesheet" href="./css/covid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <p id="logo">P</p>
+            <p class="text">PaSE Covid-19 App</p>
+        </div>
+        <div class="search-bar">
+            <input type="text" disabled placeholder="work in progress">
+            <button type="submit" value="Search" disabled><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="cases">
+            <p>Total Cases <i class="fa fa-caret-up"></i></p>
+            <span id="total-cases"></span>
+        </div>
+        <div class="cases">
+            <p>Recovered <i class="fa fa-caret-down"></i></p>
+            <span id="total-recovered"></span>
+        </div>
+        <div class="cases">
+            <p>Active Cases <i class="fa fa-caret-up"></i></p>
+            <span id="total-active"></span>
+        </div>
+        <div class="cases">
+            <p>Total Death <i class="fa fa-caret-down"></i></p>
+            <span id="total-deaths"></span>
+        </div>
+    </div>
+    <div class="main">
+        <table>
+            <thead>
+                <tr>
+                    <th>Countries</th>
+                    <th>Active cases</th>
+                    <th>Recovered</th>
+                    <th>Total Death</th>
+                    <th>Total Cases</th>
+                </tr>
+            </thead>
+            <tbody id="tbd">
+                <div id="loading-bar" class="loader"></div>
+            </tbody>
+        </table>
+
+        <div class="tip-wrapper">
+            <div class="tips">
+                <p>Health Tips</p>
+                <marquee behavior="" direction="right" id="marq">Quédate en casa...</marquee>
+                <marquee behavior="" direction="left" id="marq1">Mantente a salvo</marquee>
+            </div>
+            <div class="tips">
+                <p>News and Updates</p>
+                <img src="./img/covid19-image.jpg" alt="scientist in a lab">
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
